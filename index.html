@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>My Home Page</title>
+  </head>
+  <body>
+    <header id="header">
+      <div class="inner">    
+        <a href="index.html" class="logo">Animation</a>
+        <nav id="nav">
+          <a href="index.html" style="color:#c8dbf5;">Menu 1</a>
+          <a href="menu2.html">Menu 2</a>
+          <a href="menu3.html">Menu 3</a>
+          <button id="menu-button">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+          </button>
+        </nav>
+      </div>
+    </header>
+
+    <nav id="side-menu" class="hidden">
+      <img src="https://avatars2.githubusercontent.com/u/49610681?s=460&u=c796432dbdd2e4d3a6e26c211a668c457f4e1fe0&v=4" alt="" />
+      <ul>
+        <li><a href="index.html" style="color:#c8dbf5;">Menu 1</a></li>
+        <li><a href="menu2.html">Menu 2</a></li>
+        <li><a href="menu3.html">Menu 3</a></li>
+      </ul>
+    </nav>
+  
+
+    <section id="banner">
+      <div class="inner">
+        <div class="wrapper">
+          <div class="face"></div>
+          <div class="face"></div>
+          <div class="face"></div>
+          <div class="face"></div>
+          <div class="face"></div>
+          <div class="face"></div>
+        </div>  
+        <h1>Animation Practice</h1>
+      </div>
+    </section>
+
+    <section id="one">
+      <div class="inner">
+        <header>
+          <h2>Lorem ipsum dolor</h2>
+        </header>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat at facilis error quidem enim eligendi nam eaque, maxime vitae voluptatem 
+          pariatur voluptate exercitationem laboriosam dolores ex mollitia harum fugit magnam reiciendis iure, adipisci architecto modi ipsa aliquam. 
+          Odit, dicta consequatur, distinctio possimus praesentium at reprehenderit illum repellendus perspiciatis ab quidem!
+        </p>
+      </div>
+    </section>
+
+    <section id="two">
+      <div class="inner">
+        <article>
+          <div class="content">
+            <header>
+              <h3>Lorem ipsum dolor</h3>
+            </header>
+            <div class="image fit">
+              <img src="https://picsum.photos/473/220" alt="" />
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+              Placeat at facilis error quidem enim eligendi nam eaque, 
+              maxime vitae voluptatem pariatur voluptate exercitationem 
+              laboriosam dolores ex mollitia harum fugit magnam reiciendis iure, 
+              adipisci architecto modi ipsa aliquam. Odit, dicta consequatur, 
+              distinctio possimus praesentium at reprehenderit illum repellendus
+              perspiciatis ab quidem!
+            </p>
+          </div>
+        </article>
+        <article class="alt">
+          <div class="content">
+            <header>
+              <h3>Lorem ipsum dolor</h3>
+            </header>
+            <div class="image fit">
+              <img src="https://picsum.photos/473/220.jpg" alt="" />
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+              Placeat at facilis error quidem enim eligendi nam eaque, 
+              maxime vitae voluptatem pariatur voluptate exercitationem 
+              laboriosam dolores ex mollitia harum fugit magnam reiciendis iure, 
+              adipisci architecto modi ipsa aliquam. Odit, dicta consequatur, 
+              distinctio possimus praesentium at reprehenderit illum repellendus
+              perspiciatis ab quidem!
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="three">
+      <div class="inner">
+        <header>
+          <h2>Lorem ipsum dolor</h2>
+        </header>
+        <div class="images">
+          <img src="img/1.png">
+          <img src="img/2.jpg">
+          <img src="img/3.png" class="big">
+          <img src="img/4.jpg" class="big">
+          <img src="img/5.jpg">
+          <img src="img/6.jpg">
+          <img src="img/7.jpg">
+          <img src="img/8.jpg">
+          <img src="img/9.jpg">
+        </div>
+      </div>
+    </section>
+
+    <footer id="footer">
+      <div class="inner">
+        <div class="copyright">
+          &copy; 2018037010 <a href="https://github.com/dungbik">윤정환</a>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      let hidden = true;
+      const menuButton = document.getElementById('menu-button');
+      const sideMenu = document.getElementById('side-menu');
+  
+      menuButton.addEventListener('click', () => {
+        if (hidden) {
+          sideMenu.classList.remove('hidden');
+          hidden = false;
+        } else {
+          sideMenu.classList.add('hidden');
+          hidden = true;
+        }
+      });
+    </script>
+  
+  </body>
+</html>
